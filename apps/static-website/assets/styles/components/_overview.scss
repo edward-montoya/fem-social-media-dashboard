@@ -1,24 +1,41 @@
 @use "@fem/tokens/dist/scss/mixins" as *;
+@use "./dashboard";
 
-.card {
-    width: 100%;
-    background-color: var(--background-terciary);
-    display: grid;
-    padding: 2rem 0 1.5rem;
-    &--primary {
-        place-items: center;
-    }
-    &__link {
-        display: flex;
-        align-items: center;
-        gap: 0.5rem;
+.overview {
+    &__title {
+        @extend %fem-text-heading-sans-200;
         color: var(--text-secondary);
-        & > img {
-            width: 1.25rem;
-            height: 1.25rem;
+        margin-bottom: 1.69rem;
+    }
+    &-card {
+        border-radius: 0.3125rem;
+        width: 100%;
+        background-color: var(--background-terciary);
+        display: grid;
+        padding: 1.69rem 1.94rem  1.19rem 1.5rem;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 1.44rem;
+        &__title {
+            color: var(--text-secondary);
+            @extend %fem-text-heading-sans-100;
         }
-        & > span {
-            @extend %fem-text-body-100;
+        &__counter {
+            @extend %fem-text-heading-sans-300;
+            font-size: 2rem;
+        }
+        &__image {
+            justify-self: end;
+        }
+        &__indicator {
+            justify-self: end;
+            @extend .dashboard__indicator;
+            &--success {
+                color: var(--fem-color-text-success);
+            }
+            &--error {
+                color: var(--fem-color-text-error);
+            }
         }
     }
 }
