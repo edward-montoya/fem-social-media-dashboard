@@ -1,0 +1,36 @@
+{
+  "color": {
+    "card": {
+      "meta": {
+        "value": "{config.color.primary.blue.dark.value}"
+      },
+      "twitter": {
+        "value": "{config.color.primary.blue.light.value}"
+      },
+      "instagram": {
+        "one": {
+          "value": "{config.color.primary.yellow.value}"
+        },
+        "two": {
+          "value": "{config.color.primary.red.orange.value}"
+        },
+        "three": {
+          "value": "{config.color.primary.red.light.value}"
+        }
+      },
+      "youtube": {
+        "value": "{config.color.primary.red.dark.value}"
+      },
+      "darkmode": {
+        "primary": {
+          "value": "{config.color.neutral.darker-grayish.value}"
+        }
+      },
+      "lightmode": {
+        "primary": {
+          "value": "{config.color.neutral.lighter.value}"
+        }
+      }
+    }
+  }
+}

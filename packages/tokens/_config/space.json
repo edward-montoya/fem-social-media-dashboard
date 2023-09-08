@@ -1,0 +1,18 @@
+{
+    "config": {
+        "space": {
+            "xs": {
+                "value": "1.5rem"
+            },
+            "sm": {
+                "value": "1.88rem"
+            },
+            "md": {
+                "value": "2.88rem"
+            },
+            "lg": {
+                "value": "10.31rem"
+            }
+        }
+    }
+}

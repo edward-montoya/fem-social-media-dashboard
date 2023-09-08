@@ -1,0 +1,22 @@
+{
+  "color": {
+    "background": {
+      "darkmode": {
+        "primary": {
+          "value": "{config.color.neutral.darker.value}"
+        },
+        "secondary": {
+          "value": "{config.color.neutral.darker-bluyish.value}"
+        }
+      },
+      "lightmode": {
+        "primary": {
+          "value": "{config.color.neutral.lightest.value}"
+        },
+        "secondary": {
+          "value": "{config.color.neutral.lighter-grayish.value}"
+        }
+      }
+    }
+  }
+}

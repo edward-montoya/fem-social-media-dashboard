@@ -1,0 +1,28 @@
+{
+  "color": {
+    "text": {
+      "darkmode": {
+        "primary": {
+          "value": "{config.color.neutral.lightest.value}"
+        },
+        "secondary": {
+          "value": "{config.color.neutral.dark.value}"
+        }
+      },
+      "lightmode": {
+        "primary": {
+          "value": "{config.color.neutral.darker.value}"
+        },
+        "secondary": {
+          "value": "{config.color.neutral.light.value}"
+        }
+      },
+      "success": {
+        "value": "{config.color.accent.green.value}"
+      },
+      "error": {
+        "value": "{config.color.accent.red.value}"
+      }
+    }
+  }
+}

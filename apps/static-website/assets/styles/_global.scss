@@ -1,0 +1,32 @@
+@use '@fem/tokens/dist/scss/mixins' as *;
+@use '@fem/tokens/dist/css/colors.css';
+
+:root {
+    --background-primary: var(--fem-color-background-lightmode-primary);
+    --background-secondary: var(--fem-color-background-lightmode-secondary);
+    --text-primary: var(--fem-color-text-lightmode-primary);
+    --text-secondary: var(--fem-color-text-lightmode-secondary);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+      --background-primary: var(--fem-color-background-darkmode-primary);
+      --background-secondary: var(--fem-color-background-darkmode-secondary);
+      --text-primary: var(--fem-color-text-darkmode-primary);
+      --text-secondary: var(--fem-color-text-darkmode-secondary);
+    }
+}
+
+body {
+  background-color: var(--background-primary);
+  color: var(--text-primary);
+  margin: 2.25rem 1.56rem;
+
+  @extend %fem-text-body-100;
+}
+
+@media screen and (min-width: 800px) {
+  body {
+    margin: 2.25rem 10.31rem;
+  }
+}

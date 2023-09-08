@@ -1,0 +1,73 @@
+{
+  "config": {
+    "color": {
+      "primary": {
+        "red": {
+          "light": {
+            "value": "#DF4896"
+          },
+          "orange": {
+            "value": "#EE877E"
+          },
+          "dark": {
+            "value": "#C4032B"
+          }
+        },
+        "blue": {
+          "light": {
+            "value": "#1DA1F2"
+          },
+          "dark": {
+            "value": "#178FF5"
+          }
+        },
+        "yellow": {
+          "value": "#FDC366"
+        }
+      },
+      "accent": {
+        "red": {
+          "value": "#DC414C"
+        },
+        "green": {
+          "value": "#1EB589"
+        }
+      },
+      "neutral": {
+        "lightest": {
+          "value": "#ffffff"
+        },
+        "lighter": {
+          "value": "#F1F3FA"
+        },
+        "lighter-grayish": {
+          "value": "#F7F9FF"
+        },
+        "gray-light": {
+          "value": "#AEB3CB"
+        },
+        "light": {
+          "value": "#63687D"
+        },
+        "dark": {
+          "value": "#8C98C6"
+        },
+        "darker-grayish": {
+          "value": "#252B42"
+        },
+        "darker-bluyish": {
+          "value": "#20222F"
+        },
+        "gray": {
+          "value": "#848BAB"
+        },
+        "darker": {
+          "value": "#1D1F29"
+        },
+        "darkest": {
+          "value": "#000000"
+        }
+      }
+    }
+  }
+}

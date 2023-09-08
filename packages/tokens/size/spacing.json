@@ -1,0 +1,16 @@
+{
+    "space": {
+        "one-x": {
+            "value": "{config.space.sm.value}"
+        },
+        "two-x": {
+            "value": "calc(2 * {config.space.sm.value})"
+        },
+        "one-x-vertical": {
+            "value": "{config.space.xs.value}"
+        },
+        "two-x-vertical": {
+            "value": "calc(2 * {config.space.xs.value})"
+        }
+    } 
+}

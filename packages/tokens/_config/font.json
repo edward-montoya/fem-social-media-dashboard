@@ -1,0 +1,132 @@
+{
+  "config": {
+    "font": {
+      "family": {
+        "sans": {
+          "value": "'Inter', sans-serif"
+        }
+      },
+      "style": {
+        "normal": {
+          "value": "normal"
+        }
+      },
+      "weight": {
+        "light": {
+          "value": "100"
+        },
+        "regular": {
+          "value": "400"
+        },
+        "bold": {
+          "value": "700"
+        },
+        "super-bold": {
+          "value": "800"
+        }
+      },
+      "height": {
+        "normal": {
+          "value": "normal"
+        },
+        "100": {
+          "value": "1rem"
+        },
+        "200": {
+          "value": "1.063rem"
+        },
+        "300": {
+          "value": "1.188rem"
+        },
+        "400": {
+          "value": "1.5rem"
+        },
+        "500": {
+          "value": "1.563rem"
+        },
+        "600": {
+          "value": "2.063rem"
+        },
+        "700": {
+          "value": "2.25rem"
+        },
+        "800": {
+          "value": "2.375rem"
+        },
+        "900": {
+          "value": "2.75rem"
+        },
+        "1000": {
+          "value": "3.625rem"
+        }
+      },
+      "size": {
+        "100": {
+          "value": "0.75rem"
+        },
+        "200": {
+          "value": "0.813rem"
+        },
+        "300": {
+          "value": "0.875rem"
+        },
+        "400": {
+          "value": "0.938rem"
+        },
+        "500": {
+          "value": "1.125rem"
+        },
+        "600": {
+          "value": "1.5rem"
+        },
+        "700": {
+          "value": "1.75rem"
+        },
+        "800": {
+          "value": "2rem"
+        },
+        "900": {
+          "value": "2.5rem"
+        },
+        "1000": {
+          "value": "3.5rem"
+        }
+      },
+      "space": {
+        "10": {
+          "value": "-0.125rem"
+        },
+        "100": {
+          "value": "-0.013rem"
+        },
+        "200": {
+          "value": "-0.016rem"
+        },
+        "300": {
+          "value": "0.063rem"
+        },
+        "400": {
+          "value": "0.072rem"
+        },
+        "500": {
+          "value": "0.081rem"
+        },
+        "600": {
+          "value": "0.094rem"
+        },
+        "700": {
+          "value": "0.106rem"
+        },
+        "800": {
+          "value": "0.125rem"
+        },
+        "900": {
+          "value": "0.3125rem"
+        },
+        "1000": {
+          "value": "0.625rem"
+        }
+      }
+    }
+  }
+}
