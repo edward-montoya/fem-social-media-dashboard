@@ -4,18 +4,19 @@
 :root {
     --background-primary: var(--fem-color-background-lightmode-primary);
     --background-secondary: var(--fem-color-background-lightmode-secondary);
+    --background-terciary: var(--fem-color-card-lightmode-primary);
     --text-primary: var(--fem-color-text-lightmode-primary);
     --text-secondary: var(--fem-color-text-lightmode-secondary);
 }
 
-@media (prefers-color-scheme: dark) {
-    :root {
-      --background-primary: var(--fem-color-background-darkmode-primary);
-      --background-secondary: var(--fem-color-background-darkmode-secondary);
-      --text-primary: var(--fem-color-text-darkmode-primary);
-      --text-secondary: var(--fem-color-text-darkmode-secondary);
-    }
+[data-theme="dark"] {
+  --background-primary: var(--fem-color-background-darkmode-primary);
+  --background-secondary: var(--fem-color-background-darkmode-secondary);
+  --background-terciary: var(--fem-color-card-darkmode-primary);
+  --text-primary: var(--fem-color-text-darkmode-primary);
+  --text-secondary: var(--fem-color-text-darkmode-secondary);
 }
+
 
 body {
   background-color: var(--background-primary);
