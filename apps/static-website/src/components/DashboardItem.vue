@@ -7,7 +7,7 @@
             </a>
             <div class="dashboard__counter">
               <span class="dashboard__counter-value">{{ formatFollowers() }}</span>
-              <span class="dashboard__label">Followers</span>
+              <span class="dashboard__label">{{ socialNetwork=='youtube' ? 'subscribers' : 'followers' }}</span>
             </div>
             <div class="dashboard__indicator" :class="getClassIndicator()">
               <img width="8" height="4" :alt="altImage()" :src="getIndicator(props.views)" />
