@@ -2,7 +2,7 @@
     <article class="dashboard__item dashboard__item--meta">
             <h3 class="sr-only">{{ props.socialNetwork }}</h3>
             <a class="dashboard__link">
-              <img :src="getIcon(props.socialNetwork)" alt="">
+              <img width="20" height="20" :src="getIcon(props.socialNetwork)" alt="">
               <span>{{ props.account }}</span>
             </a>
             <div class="dashboard__counter">
@@ -10,7 +10,7 @@
               <span class="dashboard__label">Followers</span>
             </div>
             <div class="dashboard__indicator" :class="getClassIndicator()">
-              <img :src="getIndicator(props.views)" />
+              <img width="8" height="4" :alt="altImage()" :src="getIndicator(props.views)" />
               <span>{{ getViews() }} Today</span>
             </div>
           </article>
@@ -38,6 +38,11 @@ function formatFollowers() {
 function getClassIndicator() {
     const val = props.views >= 0 ? 'success' : 'error';
     return `dashboard__indicator--${val}`;
+}
+
+function altImage () {
+  return props.percentage >= 0 ? 'up arrow, percentage increase' 
+  : 'down arrow, percentage decrease';
 }
 
 </script>

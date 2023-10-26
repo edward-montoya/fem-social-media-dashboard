@@ -1,10 +1,10 @@
 <template>
     <article class="overview-card">
           <h3 class="overview-card__title">{{ props.metric }}</h3>
-          <img class="overview-card__image" :src="getIcon(props.socialNetwork)" alt="">
+          <img width="20" height="20" class="overview-card__image" :src="getIcon(props.socialNetwork)" alt="">
           <span class="overview-card__counter">{{ formatNumber(props.views, 0) }}</span>
           <div class="overview-card__indicator" :class="getClassIndicator()">
-            <img :src="getIndicator(props.percentage)" />
+            <img width="8" height="4" :alt="altImage()" :src="getIndicator(props.percentage)" />
             <span>{{props.percentage}}%</span>
           </div>
         </article>
@@ -24,6 +24,11 @@ const props = defineProps({
 function getClassIndicator() {
     const val = props.percentage >= 0 ? 'success' : 'error';
     return `overview-card__indicator--${val}`;
+}
+
+function altImage () {
+  return props.percentage >= 0 ? 'up arrow, views increase today' 
+  : 'down arrow, views decrease today';
 }
 
 </script>

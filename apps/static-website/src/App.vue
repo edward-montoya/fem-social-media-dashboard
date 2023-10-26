@@ -8,6 +8,7 @@
       <div class="mode">
         <span class="mode__label">Dark Mode</span>
         <label class="switch">
+          Switch:   
           <input :value="theme.value === 'dark'" @change="toogleTheme" class="switch__input" type="checkbox" />
           <span class="switch__slider switch__slider--round"></span>
         </label>
