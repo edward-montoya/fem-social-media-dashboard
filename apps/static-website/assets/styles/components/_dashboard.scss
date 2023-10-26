@@ -75,5 +75,13 @@
             color: var(--fem-color-text-error);
         }
     }
+}
 
+@media screen and (min-width:800px) {
+    .dashboard {
+        &__content {
+            display: flex;
+            flex-direction: row;
+        }
+    }
 }

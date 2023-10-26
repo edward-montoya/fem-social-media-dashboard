@@ -78,3 +78,26 @@
     }
   }
 }
+
+@media screen and (min-width:800px) {
+  .header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 2.88rem;
+    &__title {
+      grid-column: 1;
+    }
+    &__subtitle {
+      grid-column: 1;    }
+    > hr {
+      display: none;
+    }
+  }
+  .mode {
+    justify-self: end;
+    align-self: center;
+    grid-column: 2;
+    gap: 1rem;
+    margin: 0;
+  }
+}

@@ -4,8 +4,14 @@
 .overview {
     &__title {
         @extend %fem-text-heading-sans-200;
-        color: var(--text-secondary);
+        color: var(--text-terciary);
         margin-bottom: 1.69rem;
+    }
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        margin-bottom: 2.88rem;
     }
     &-card {
         border-radius: 0.3125rem;
@@ -19,15 +25,18 @@
         &__title {
             color: var(--text-secondary);
             @extend %fem-text-heading-sans-100;
+            justify-self: start;
         }
         &__counter {
             @extend %fem-text-heading-sans-300;
             font-size: 2rem;
+            justify-self: start;
         }
         &__image {
             justify-self: end;
         }
         &__indicator {
+            align-self: end;
             justify-self: end;
             @extend .dashboard__indicator;
             &--success {
@@ -36,6 +45,15 @@
             &--error {
                 color: var(--fem-color-text-error);
             }
+        }
+    }
+}
+
+@media screen and (min-width:800px) {
+    .overview {
+        &__content {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
         }
     }
 }

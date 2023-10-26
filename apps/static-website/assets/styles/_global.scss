@@ -7,6 +7,7 @@
     --background-terciary: var(--fem-color-card-lightmode-primary);
     --text-primary: var(--fem-color-text-lightmode-primary);
     --text-secondary: var(--fem-color-text-lightmode-secondary);
+    --text-terciary: var(--fem-color-text-lightmode-secondary);
 }
 
 [data-theme="dark"] {
@@ -15,19 +16,20 @@
   --background-terciary: var(--fem-color-card-darkmode-primary);
   --text-primary: var(--fem-color-text-darkmode-primary);
   --text-secondary: var(--fem-color-text-darkmode-secondary);
+  --text-terciary: #fff;
 }
 
 
 body {
+  width: 100%;
   background-color: var(--background-primary);
   color: var(--text-primary);
-  margin: 2.25rem 1.56rem;
-
   @extend %fem-text-body-100;
+  padding: 2.25rem 1.56rem;
 }
 
 @media screen and (min-width: 800px) {
   body {
-    margin: 2.25rem 10.31rem;
+    padding: 2.25rem 10.31rem;
   }
 }
