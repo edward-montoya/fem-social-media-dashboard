@@ -128,12 +128,17 @@
           },
           "height": {
             "property": "line-height",
-            "value": "{config.font.height.normal.value}",
+            "value": "3rem",
             "mixin": true
           },
           "size": {
             "property": "font-size",
             "value": "{config.font.size.1000.value}",
+            "mixin": true
+          },
+          "letter-spacing": {
+            "property": "letter-spacing",
+            "value": "-0.125rem",
             "mixin": true
           }
         }

@@ -1,5 +1,5 @@
 <template>
-    <article class="dashboard__item dashboard__item--meta">
+    <article :class="`dashboard__item dashboard__item--${socialNetwork}`">
             <h3 class="sr-only">{{ props.socialNetwork }}</h3>
             <a class="dashboard__link">
               <img width="20" height="20" :src="getIcon(props.socialNetwork)" alt="">
