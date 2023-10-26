@@ -117,13 +117,10 @@ const overview = shallowRef([
 ]);
 
 onMounted(() => {
-    var storedTheme = localStorage.getItem('theme') || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
-    if (storedTheme) {
-        theme.value = storedTheme;
-    }
+    document.documentElement.setAttribute('data-theme', theme.value);
 });
 
-watch(theme, async (oldValue, newValue) => {
+watch(theme, (newValue, oldValue) => {
     if (oldValue !== newValue) {
         document.documentElement.setAttribute('data-theme', newValue);
     }
