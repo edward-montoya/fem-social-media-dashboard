@@ -1,14 +1,12 @@
 <template>
     <header class="header">
-      <div>
         <h1 class="header__title">Social Media Dashboard</h1>
         <span class="header__subtitle">Total Followers: 23,004</span>
-      </div>
       <hr />
       <div class="mode">
         <span class="mode__label">Dark Mode</span>
         <label class="switch">
-          <div class="sr-only">Switch</div>  
+          Switch
           <input :value="theme.value === 'dark'" @change="toogleTheme" class="switch__input" type="checkbox" />
           <span class="switch__slider switch__slider--round"></span>
         </label>
@@ -39,7 +37,7 @@ import { onMounted, watch, shallowRef } from "vue";
 import DashboardItem from "./components/DashboardItem.vue";
 import OverviewItem from "./components/OverviewItem.vue";
 
-const theme = shallowRef('light');
+const theme = shallowRef('dark');
 const dashboard = shallowRef([
     {
         socialNetwork: 'facebook',
