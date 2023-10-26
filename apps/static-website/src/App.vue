@@ -54,8 +54,8 @@ const dashboard = shallowRef([
     {
         socialNetwork: 'instagram',
         followers: 11000,
-        views: 12,
-        account: '@nathanf'
+        views: 1099,
+        account: '@realnathanf'
     },
     {
         socialNetwork: 'youtube',
