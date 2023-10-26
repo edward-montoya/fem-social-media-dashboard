@@ -24,13 +24,13 @@ Users should be able to:
 
 ### Screenshot
 
-![](./images/desktop-light.jpg)
+![](./images/desktop-light.jpeg)
 
-![](./images/desktop-dark.jpg)
+![](./images/desktop-dark.jpeg)
 
-![](./images/mobile-light.jpg)
+![](./images/mobile-light.jpeg)
 
-![](./images/mobile-dark.jpg)
+![](./images/mobile-dark.jpeg)
 
 
 ### Links
