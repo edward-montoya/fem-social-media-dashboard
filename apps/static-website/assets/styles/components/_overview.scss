@@ -1,5 +1,7 @@
 @use "@fem/tokens/dist/scss/mixins" as *;
+@use "@fem/tokens/dist/scss/tokens" as *;
 @use "./dashboard";
+@use "../utils";
 
 .overview {
     &__title {
@@ -22,9 +24,12 @@
         padding: 1.69rem 1.94rem  1.19rem 1.5rem;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
+        position: relative;
+        &:hover {
+            background-color: var(--background-hover);
+            cursor: pointer;
+        }
         &__title {
-            color: var(--text-secondary);
-            @extend %fem-text-heading-sans-100;
             justify-self: start;
         }
         &__counter {
@@ -46,10 +51,15 @@
                 color: var(--fem-color-text-error);
             }
         }
+        &__link {
+            color: var(--text-secondary);
+            @extend %fem-text-heading-sans-100;
+            @extend %links;
+        }
     }
 }
 
-@media screen and (min-width:800px) {
+@media screen and (min-width: $fem-breakpoint-sm) {
     .overview {
         &__content {
             display: grid;

@@ -1,10 +1,12 @@
 @use "@fem/tokens/dist/scss/mixins" as *;
+@use "@fem/tokens/dist/scss/tokens" as *;
+@use "../utils";
 
 .dashboard {
     &__content {
         display: flex;
         flex-direction: column;
-        gap: 1.5rem;
+        gap: 1.88rem;
         margin-bottom: 2.88rem;
     }
     &__item {
@@ -14,6 +16,11 @@
         display: grid;
         padding: 2rem 0 1.5rem;
         place-items: center;
+        position: relative;
+        &:hover {
+            background-color: var(--background-hover);
+            cursor: pointer;
+        }
         &--facebook {
             border-top: 4px solid var(--fem-color-card-meta);
         }
@@ -50,6 +57,7 @@
         & > span {
             @extend %fem-text-body-100;
         }
+        @extend %links;
     }
     &__label {
         margin-top: 0.5rem;
@@ -81,7 +89,7 @@
     }
 }
 
-@media screen and (min-width:800px) {
+@media screen and (min-width: $fem-breakpoint-sm) {
     .dashboard {
         &__content {
             display: flex;

@@ -49,8 +49,14 @@
         "light": {
           "value": "#63687D"
         },
+        "light-hover": {
+          "value": "#E1E4F0"
+        },
         "dark": {
           "value": "#8C98C6"
+        },
+        "dark-hover": {
+          "value": "#333A55"
         },
         "darker-grayish": {
           "value": "#252B42"

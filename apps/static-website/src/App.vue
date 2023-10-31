@@ -71,12 +71,14 @@ const overview = shallowRef([
         socialNetwork: 'facebook',
         percentage: 3,
         views: 87,
+        account: '@nathanf'
     },
     {
         metric: 'Likes',
         socialNetwork: 'facebook',
         percentage: -2,
         views: 52,
+        account: '@nathanf'
     },
     {
         metric: 'Likes',
@@ -89,30 +91,35 @@ const overview = shallowRef([
         socialNetwork: 'instagram',
         percentage: 1375,
         views: 52000,
+        account: '@realnathanf'
     },
     {
         metric: 'Retweets',
         socialNetwork: 'twitter',
         percentage: 303,
         views: 117,
+        account: '@realnathanf'
     },
     {
         metric: 'Likes',
         socialNetwork: 'twitter',
         percentage: 553,
         views: 507,
+        account: '@nathanf'
     },
     {
         metric: 'Likes',
         socialNetwork: 'youtube',
         percentage: -19,
         views: 107,
+        account: '@nathanf'
     },
     {
         metric: 'Total Views',
         socialNetwork: 'youtube',
         percentage: -12,
         views: 1407,
+        account: '@nathanf'
     },
 ]);
 

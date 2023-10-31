@@ -1,4 +1,5 @@
 @use "@fem/tokens/dist/scss/mixins" as *;
+@use "@fem/tokens/dist/scss/tokens" as *;
 
 .header {
   &__title {
@@ -40,6 +41,8 @@
         background: grey;
     }
     &:focus + #{$switch}__slider {
+        outline: solid;
+        outline-color: var(--link-focus);
         box-shadow: 0 0 1px grey;
     }
     &:checked + #{$switch}__slider:before {
@@ -57,7 +60,7 @@
     bottom: 0;
     background-color: #ccc;
     -webkit-transition: 0.4s;
-    transition: 0.4s;
+    transition: color 0.4s;
     background: linear-gradient(0deg, rgba(56,143,231,1) 0%, rgba(64,219,130,1) 100%);
     box-shadow: 0 0 1px #2196F3;
     &::before {
@@ -80,7 +83,7 @@
   }
 }
 
-@media screen and (min-width:800px) {
+@media screen and (min-width: $fem-breakpoint-sm) {
   .header {
     display: grid;
     grid-template-columns: 1fr 1fr;

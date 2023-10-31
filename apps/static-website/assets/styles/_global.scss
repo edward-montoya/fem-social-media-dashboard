@@ -1,24 +1,28 @@
-@use '@fem/tokens/dist/scss/mixins' as *;
-@use '@fem/tokens/dist/css/colors.css';
+@use "@fem/tokens/dist/scss/mixins" as *;
+@use "@fem/tokens/dist/scss/tokens" as *;
+@use "@fem/tokens/dist/css/colors.css";
 
 :root {
-    --background-primary: var(--fem-color-background-lightmode-primary);
-    --background-secondary: var(--fem-color-background-lightmode-secondary);
-    --background-terciary: var(--fem-color-card-lightmode-primary);
-    --text-primary: var(--fem-color-text-lightmode-primary);
-    --text-secondary: var(--fem-color-text-lightmode-secondary);
-    --text-terciary: var(--fem-color-text-lightmode-secondary);
+  --background-primary: var(--fem-color-background-lightmode-primary);
+  --background-secondary: var(--fem-color-background-lightmode-secondary);
+  --background-terciary: var(--fem-color-card-lightmode-primary);
+  --background-hover: var(--fem-color-card-lightmode-hover);
+  --text-primary: var(--fem-color-text-lightmode-primary);
+  --text-secondary: var(--fem-color-text-lightmode-secondary);
+  --text-terciary: var(--fem-color-text-lightmode-secondary);
+  --link-focus: var(--fem-color-text-lightmode-primary);
 }
 
 [data-theme="dark"] {
   --background-primary: var(--fem-color-background-darkmode-primary);
   --background-secondary: var(--fem-color-background-darkmode-secondary);
   --background-terciary: var(--fem-color-card-darkmode-primary);
+  --background-hover: var(--fem-color-card-darkmode-hover);
   --text-primary: var(--fem-color-text-darkmode-primary);
   --text-secondary: var(--fem-color-text-darkmode-secondary);
   --text-terciary: #fff;
+  --link-focus: var(--fem-color-text-darkmode-primary);
 }
-
 
 body {
   width: 100%;
@@ -28,7 +32,11 @@ body {
   padding: 2.25rem 1.56rem;
 }
 
-@media screen and (min-width: 800px) {
+header {
+  background-color: var(--background-primary);
+}
+
+@media screen and (min-width: $fem-breakpoint-sm) {
   body {
     padding: 2.25rem 10.31rem;
   }

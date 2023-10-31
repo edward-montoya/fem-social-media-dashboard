@@ -24,11 +24,17 @@
       "darkmode": {
         "primary": {
           "value": "{config.color.neutral.darker-grayish.value}"
+        },
+        "hover": {
+          "value": "{config.color.neutral.dark-hover.value}"
         }
       },
       "lightmode": {
         "primary": {
           "value": "{config.color.neutral.lighter.value}"
+        },
+        "hover": {
+          "value": "{config.color.neutral.light-hover.value}"
         }
       }
     }
