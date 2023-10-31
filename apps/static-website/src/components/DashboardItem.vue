@@ -1,19 +1,20 @@
 <template>
   <article :class="`dashboard__item dashboard__item--${socialNetwork}`">
-    <h3 class="sr-only">{{ props.socialNetwork }}</h3>
-    <a
-      :aria-label="cardLinkDescription"
-      class="dashboard__link"
-      :href="hrefAccount"
-    >
-      <img
-        width="20"
-        height="20"
-        :src="getIcon(props.socialNetwork).value"
-        alt=""
-      />
-      <span>{{ props.account }}</span>
-    </a>
+    <h3>
+      <a
+        :aria-label="cardLinkDescription"
+        class="dashboard__link"
+        :href="hrefAccount"
+      >
+        <img
+          width="20"
+          height="20"
+          :src="getIcon(props.socialNetwork).value"
+          alt=""
+        />
+        <span>{{ props.account }}</span>
+      </a>
+    </h3>
     <div class="dashboard__counter">
       <span class="dashboard__counter-value">{{ formatFollowers }}</span>
       <span class="dashboard__label">{{
