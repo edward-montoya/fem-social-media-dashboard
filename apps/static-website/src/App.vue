@@ -61,7 +61,7 @@ const dashboard = shallowRef([
         socialNetwork: 'youtube',
         followers: 8239,
         views: -144,
-        account: '@nathanf'
+        account: 'Nathan F.'
     }
 ]);
 
@@ -85,6 +85,7 @@ const overview = shallowRef([
         socialNetwork: 'instagram',
         percentage: 2257,
         views: 5462,
+        account: '@realnathanf'
     },
     {
         metric: 'Profile Views',
@@ -112,14 +113,14 @@ const overview = shallowRef([
         socialNetwork: 'youtube',
         percentage: -19,
         views: 107,
-        account: '@nathanf'
+        account: 'Nathan F.'
     },
     {
         metric: 'Total Views',
         socialNetwork: 'youtube',
         percentage: -12,
         views: 1407,
-        account: '@nathanf'
+        account: 'Nathan F.'
     },
 ]);
 

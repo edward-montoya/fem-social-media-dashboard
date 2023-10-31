@@ -1,4 +1,4 @@
-export default function formatNumber(num, precision = 2) {
+export function formatNumber(num, precision = 2) {
     const map = [
       { suffix: 'T', threshold: 1e12 },
       { suffix: 'B', threshold: 1e9 },
@@ -15,3 +15,11 @@ export default function formatNumber(num, precision = 2) {
   
     return num;
   }
+
+export const stringToSlug = (str) => {
+  return str
+    .trim()
+    .toLowerCase()
+    .replace(/[\W_]+/g, '-')
+    .replace(/^-+|-+$/g, '');
+};
